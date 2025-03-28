@@ -19,7 +19,7 @@
 - **Sass**: Pré-processador CSS para facilitar a estilização.
 - **React Icons**: Para ícones no projeto.
 - **Axios**: Biblioteca para realizar requisições HTTP.
-- **Teste Unitario**: Biblioteca para realizar Testes.
+- **Teste Unitario**: Biblioteca Jest para realizar Testes.
 
 ## Como Rodar o Projeto
 
