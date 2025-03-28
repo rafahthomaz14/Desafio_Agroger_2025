@@ -38,8 +38,8 @@ export default function Home() {
                     lista.map((item, index) => (
                         <div key={index} className="conteudo-api">
                             <div className="card-api">
-                                <h3>SESSÃO #{item.id}</h3>
-                                <h4>{item.name}</h4>
+                                <h5>SESSÃO #{item.id}</h5>
+                                <strong>{item.name}</strong>
                                 <p>{item.status}</p>
                             </div>
                             <div className="botoes">
