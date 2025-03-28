@@ -3,7 +3,10 @@
 ![Imagem](public/desafio.png) 
 
 ## Projeto Finalizado:
-![Imagem 1](public/projeto.png) ![Imagem 2](public/projeto.1.png)
+<div style="display: flex; justify-content: space-between;">
+  <img src="public/projeto.png" width="48%" />
+  <img src="public/projeto.1.png" width="48%" />
+</div>
 
 ## Funcionalidades
 
