@@ -1,21 +1,27 @@
 import './home.sass'
 import api from "../../Services/api"
-import { useFormStatus } from "react-dom"
-import { IoIosCafe } from "react-icons/io"
 import { useState } from "react"
-import { MdEdit } from "react-icons/md";
+import { IoIosCafe } from "react-icons/io"
+import { MdEdit } from "react-icons/md"
 import React from 'react'
+
 export default function Home() {
-    const { pending } = useFormStatus()
-    const [lista, setLista] = useState([])
-    const [id, setId] = useState(1)
+    const [lista, setLista] = useState([]) 
+    const [id, setId] = useState(1) 
+    const [loading, setLoading] = useState(false) 
 
-
-    // Função ao clicar vai chamar na Api, adicionando a lista e somando +1 no id
+    // Função ao clicar vai chamar na API, adicionando a lista e somando +1 no id
     async function handleGetRequest() {
-        const response = await api.get(`/receitas/${id}`)
-        setLista(prevLista => [...prevLista, response.data])
-        setId(id + 1)
+        setLoading(true); 
+        try {
+            const response = await api.get(`/receitas/${id}`)
+            setLista(prevLista => [...prevLista, response.data])
+            setId(id + 1)
+        } catch (error) {
+            console.error("Erro ao buscar os dados", error)
+        } finally {
+            setLoading(false)
+        }
     }
 
     return (
@@ -25,13 +31,13 @@ export default function Home() {
                     <div className="icone">
                         <IoIosCafe color="#368467" fontSize={20} />
                     </div>
-                    {/* verificação caso a api demore para responder */}
-                    {pending ? 'Carregando...' : ' Nova sessão de prova'}
+                    {/* Verificação de carregamento */}
+                    {loading ? 'Carregando...' : ' Nova sessão de prova'}
                 </button>
             </div>
 
             <div className="lista-sessao">
-                {/* verificação se possui alguma sessão */}
+                {/* Verificação se possui alguma sessão */}
                 {lista.length === 0 ? (
                     <h2 className="mensagem">Não Possui nenhuma sessão !</h2>
                 ) : (
