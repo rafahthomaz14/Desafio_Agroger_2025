@@ -46,11 +46,11 @@
 
 
 
-## API Utilizada
+## API Receitas Utilizada
 
 A API utilizada neste projeto é acessível através do seguinte link:
 
-- **API Link**: [https://api-receitas-pi.vercel.app](https://api-receitas-pi.vercel.app)
+- **API Link**: [https://api-receitas-pi.vercel.app/receitas/todas](https://api-receitas-pi.vercel.app/receitas/todas)
 
 Esta API foi obtida a partir do repositório do GitHub. Abaixo estão as informações de onde a encontrei:
 
