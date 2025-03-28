@@ -4,7 +4,7 @@ import { useFormStatus } from "react-dom"
 import { IoIosCafe } from "react-icons/io"
 import { useState } from "react"
 import { MdEdit } from "react-icons/md";
-
+import React from 'react'
 export default function Home() {
     const { pending } = useFormStatus()
     const [lista, setLista] = useState([])
@@ -13,7 +13,7 @@ export default function Home() {
 
     // Função ao clicar vai chamar na Api, adicionando a lista e somando +1 no id
     async function handleGetRequest() {
-        const response = await api.get(`/character/${id}`)
+        const response = await api.get(`/receitas/${id}`)
         setLista(prevLista => [...prevLista, response.data])
         setId(id + 1)
     }
@@ -38,9 +38,9 @@ export default function Home() {
                     lista.map((item, index) => (
                         <div key={index} className="conteudo-api">
                             <div className="card-api">
-                                <h5>SESSÃO #{item.id}</h5>
-                                <strong>{item.name}</strong>
-                                <p>{item.status}</p>
+                                <h4>SESSÃO #{item.id}</h4>
+                                <strong>{item.receita}</strong>
+                                <p>{item.tipo}</p>
                             </div>
                             <div className="botoes">
                                 <button className="botao-card laranja">
