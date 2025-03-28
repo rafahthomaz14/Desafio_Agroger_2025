@@ -44,3 +44,14 @@
    ```bash
    npm run dev
 
+
+
+## API Utilizada
+
+A API utilizada neste projeto é acessível através do seguinte link:
+
+- **API Link**: [https://api-receitas-pi.vercel.app](https://api-receitas-pi.vercel.app)
+
+Esta API foi obtida a partir do repositório do GitHub. Abaixo estão as informações de onde a encontrei:
+
+- **Fonte**: [https://github.com/DenilsonRabelo/API-Receitas?tab=readme-ov-file](https://github.com/DenilsonRabelo/API-Receitas?tab=readme-ov-file)
