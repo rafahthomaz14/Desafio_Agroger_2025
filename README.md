@@ -1,9 +1,9 @@
 # Desafio Agroger 2025
 
-![Imagem](pasta/public/desafio.png) 
+![Imagem](public/desafio.png) 
 
 ## Projeto Finalizado:
-![Imagem 1](pasta/public/projeto.png) ![Imagem 2](pasta/public/projeto.1.png)
+![Imagem 1](public/projeto.png) ![Imagem 2](public/projeto.1.png)
 
 ## Funcionalidades
 
@@ -23,12 +23,12 @@
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/my-coffee-tasting-app.git
+   git clone https://github.com/rafahthomaz14/Desafio_Agroger_2025.git
 
 
 2. Acesse o diretório do projeto:
    ```bash
-   cd my-coffee-tasting-app
+   cd Desafio_Agroger_2025
 
 
 3. Instale as dependências com o npm:
